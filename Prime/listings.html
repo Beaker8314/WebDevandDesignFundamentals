@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--[if lt IE9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+       $('#listing').hover(function(){
+            alert("Contact us for more info");
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/prime.css">
+    <title>Prime Properites :: Listings</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Prime Properties</h1>
+            <!--<img src="images/primelogo.gif" alt="Prime Logo" height="100" width="800">-->
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Listings</a></li>
+                <li><a href="financing.html">Financing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Listings</h2>
+
+            <h3>Schaumburg Colonial</h3>
+            <p id="listing">This single family home is a two-story colonial on a large lot.</p>
+            <a href="images/schaumburg.jpg"><img class="floatleft" src="images/schaumburgthumb.jpg" alt="Colonial House" height="" width=""></a>
+
+            <table>
+                <tr>
+                    <th>Bedrooms</th>
+                    <th>Baths</th>
+                    <th>Garage</th>
+                    <th>Listing</th>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>3</td>
+                    <td><a id="listing" href="#">Two Car Garage</a></td>
+                    <td><a href="#" onmouseover="alert('Please contact us for more information');">#3432535</a></td>
+                </tr>
+            </table>
+            <br class="clear">
+            <h3>Libertyville Condo</h3>
+            <p>New construction condo in downtown Libertyville.</p>
+            <a href="images/libertyville.jpg"><img class="floatleft" src="images/libertyvillethumb.jpg" alt="Libertyville Condo" height="" width=""></a>
+            <table>
+                <tr>
+                    <th>Bedrooms</th>
+                    <th>Baths</th>
+                    <th>Garage</th>
+                    <th>Listing</th>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td><a id="listing" href="#">Two indoor parking spaces</a></td>
+                    <td><a href="#" onmouseover="alert('Please contact us for more information');">#3432432</a></td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            Copyright &copy; 2020 Prime Properties<br>
+            <a href="">yourfirstname@yourlastname.com</a>
+        </footer>
+    </div>
+</body>
+</html>

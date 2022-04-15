@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--[if lt IE9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/fishcreek.css">
+    <title>Fish Creek Animal Hospital</title>
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+        <h1>Fish Creek Animal Hospital</h1>
+        <!--<img src="images/fishcreeklogo.gif" alt="Fish Creek Logo" height="100" width="500">-->
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="askthevet.html">Ask the Vet</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="shop.html">Shop</a></li>
+        </ul>
+    </nav>
+    <div id="rightcol">
+        <main>
+            <dl>
+                <dt class="category">Full Service Facility</dt>
+                <dd>Veterinarians and staff are on call 24 hrs, 7 days of the week.</dd>
+                <dt class="category">Years of Expereince</dt>
+                <dd>Fish Creek Veterinarians have provided quality, dependable care or beloved animals since 1984</dd>
+                <dt class="category">Open Door Policy</dt>
+                <dd>Our professionals welcome owners to stay with thier pets during any medical procedure</dd>
+            </dl>
+            <div>
+                <a id="mobile" href="tel:800-555-6666">1-800-555-6666</a>
+                <span id="desktop" >1-800-555-6666</span> <br>
+                1242 Grassy Lane <br>
+                Fish Creek, WI 55534<br>
+            </div>
+        </main><br>
+        <footer>
+            Copyright &copy; 2020 Fish Creek Animal Hospital<br>
+            <a href="">yourfirstname@yourlastname.com</a>
+            <div>
+                <p id="modDate"></p>
+                <p id="jqmodDate"></p>
+                <script>
+                    let date = document.lastModified;
+                    document.getElementById("modDate").innerHTML = `This page was modified on ${date}`;
+
+                    $(document).ready(function() {
+                        $("#jqmodDate").html("This page was last modified on: " + document.lastModified);
+                    });
+                </script>
+            </div>
+        </footer>
+    </div>
+    </div>
+</body>
+</html>

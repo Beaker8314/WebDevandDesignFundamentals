@@ -1,0 +1,257 @@
+/*Global Styles*/
+head, nav, main, footer{
+    display: block;
+}
+
+#mobile{
+    display: none;
+}
+
+#desktop{
+    display: inline;
+}
+
+body {
+    background: url(/Users/viktorb/Desktop/Web\ Dev\ and\ Design\ Fundamentals/Fishcreek/images/gradientblue.jpg);
+    color: #d5e3ff;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+header {
+    background-color: #000066;
+    color: #ffffff;
+    /*font-family: serif;*/
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    padding: 10px;
+    line-height: 150%;
+    text-shadow: 1px 1px #cccccc;
+    text-align: center;
+    background: url(/Users/viktorb/Desktop/Web\ Dev\ and\ Design\ Fundamentals/Fishcreek/images/bigfish.gif) no-repeat center;
+}
+
+footer {
+    font-size: .70em;
+    font-style: italic;
+    padding: 10px;
+    margin-left: 180px;
+    clear: both;
+}
+
+/*Wrapper */ 
+#wrapper {
+    background-color: #ffffff;
+    color: #000066;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 700px;
+    max-width: 1024px;
+}
+
+/*Nav Styles*/
+nav {
+    float: left;
+    width: 150px;
+    font-weight: bold;
+    /*text-align: center;*/
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link{
+    color: #3262A3;
+}
+
+nav a:visited{
+    color: #6699ff;
+}
+
+nav a:hover{
+    color: #cccccc;
+}
+
+footer nav {
+    text-align: left;
+}
+
+/*table styles*/
+table{
+    border: 2px solid darkblue;
+    border-collapse: collapse;
+}
+td, th{
+    padding: 0.5em;
+    border: 1px solid darkblue;
+}
+
+/*Main Styles*/
+main{
+    margin-left: 180px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.category {
+    background-color: #ffffff;
+    color: #003366;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #666;
+}
+
+img {
+    border: none;
+}
+
+/*form css*/
+label{
+    float: left;
+    display: block;
+    text-align: right;
+    width: 8em;
+    padding-right: 5em;
+}
+input, textarea{
+    display: block;
+    margin-bottom: 1em;
+}
+#sumbit{
+    margin-left: 10em;
+}
+
+/*audio css*/
+video{
+    float: right;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*shop css*/
+.shop{
+    width: 40%;
+    float: left;
+    padding: 1em;
+}
+
+/*jquery css*/
+.label{
+    float: none;
+    position: relative;
+    left: 25em;
+    top: -2.5em;
+    width: 25em;
+    text-align: left;
+    font-style: italic;
+    font-size: 0.90em;
+    color: #f00;
+    font-family: Aril;
+}
+
+/*Tablet CSS*/ 
+@media only screen and (max-width: 1024px){
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        background-image: none;
+    }
+    #wrapper{
+        width: auto;
+        min-width: 0;
+        margin: 0;
+    }
+    h1{
+        margin: 0;
+        text-align: center;
+        font-size: 2em;
+        line-height: 200%;
+    }
+    nav{
+        float: none;
+        width: auto;
+    }
+    nav li{
+        display: inline-block;
+    }
+    nav a{
+        padding: 1em;
+        border-style: none;
+        font-size: 1.2em;
+    }
+    nav ul{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    main{
+        margin: 0;
+        padding: 0 1em;
+        font-size: 90%;
+    }
+    dd{
+        margin-bottom: 1em;
+    }
+    footer{
+        margin: 0;
+    }
+}
+
+/*Smartphone CSS*/
+@media only screen and (max-width: 768px){
+    header{
+        background-image: url(/Users/viktorb/Desktop/Web Dev and Design Fundamentals/Fishcreek/images/lilfish.gif);
+        background-position: center;
+        background-repeat: :no-repeat;
+    }
+    h1{
+        font-size: 1.5em;
+        line-height: 120%;
+    }
+    nav a{
+        display: block;
+        padding: 0.2em;
+        font-size: 1.3em;
+        border-bottom: 1px solid #330000;
+    }
+    nav li{
+        display: block;
+    }
+    nav ul{
+        text-align: left;
+    }
+    main{
+        padding-left: 0.4em;
+    }
+    .category{
+        text-shadow: none;
+    }
+    footer{
+        padding: 0;
+    }
+    #mobile{
+        display: inline;
+    }
+    #desktop{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

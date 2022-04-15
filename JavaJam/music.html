@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--[if lt IE9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/javajam.css">
+    <title>JavaJam Coffe House :: Music</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>JavaJam Coffee House</h1>
+            <!--<img src="images/javalogo.gif" alt="JavaJam logo" height="50" width="250">-->
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="gear.html">Gear</a></li>
+            </ul>
+        </nav>
+        <main>
+            <p>The first Friday night of each month at JavaJam there is a special music night.  
+                <a href="#" onmouseover="alert('Concerts sell out quickly so act fast!');">Music you won&rsquo;t want to miss!</a>
+                <a id="jqmess" href="#">Live</a>
+                Join us from 8pm to 11pm for some music and entertainment!</p>
+            <h2>January</h2>
+            <p class="details"><a href=""><img class="floatleft" src="images/melaniethumb.jpg" alt="melanie thumbnail" height="" width=""></a>
+                Melanie Morris entertains with her melodic folk style.  Check out the podcast! CDs now available.
+                <audio controls="controls">
+                    <source src="audio/melanie.mp3" type="audio/mpeg">
+                    <source src="audio/melanie.ogg" type="audio/mpeg">
+                    <a href="audio/melanie.mp3">Download the Audio File</a>
+                </audio>
+            </p>
+            <h2>February</h2>
+            <p class="details"><a href=""><img class="floatleft" src="images/gregthumb.jpg" alt="greg thumbnail" height="" width=""></a>
+                Tahoe Greg's back from his last tour.  New Songs. New stories. CDs are now available.
+                <audio controls="controls">
+                    <source src="audio/greg.mp3" type="audio/mpeg">
+                    <source src="audio/greg.ogg" type="audio/mpeg">
+                    <a href="audio/melanie.mp3">Download the Audio File</a>
+                </audio>
+            </p>
+        </main>
+        <footer>
+            Copyright &copy; 2020 JavaJam Cofee House<br>
+            <a href="">yourfirstname@yourlastname.com</a>
+        </footer>
+        <script>
+            $('#jqmess').hover(function(){
+                alert("Isn't coffee better with live music?!");
+            });
+        </script>
+    </div>
+</body>
+</html>

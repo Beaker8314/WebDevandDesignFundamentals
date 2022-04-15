@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--[if lt IE9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/prime.css">
+    <title>Prime Properties</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Prime Properties</h1>
+            <!--<img src="images/primelogo.gif" alt="Prime Logo" height="100" width="800">-->
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Listings</a></li>
+                <li><a href="financing.html">Financing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+        <main id="rightcol">
+            <video class= "floatright" controls="controls" poster="images/primeposter.jpg" width="" height="">
+                <source src="audio/prime.m4v" type="video/mp4">
+                <source src="audio/prime.ogv" type="video/ogg">
+                <embed src="audio/prime.swf" type="application/x-shockwave-flash" quality="high" width="213" height="163" title="Prime Properties">
+            </video>
+            <p>Prime Properties is prepared to market and sell your property.</p>
+            <p>The philosophy of Prime Properites is to promote our clients, not ourself.</p>
+            <p>We can also help you find the property that meets your needs:</p>
+            <ul>
+                <li>location</li>
+                <li>price</li>
+                <li>features</li>
+            </ul>
+            <h2>Podcast Episode #1,247</h2>
+            <audio controls="controls">
+                <source src="audio/primepodcast.mp3" type="audio/mpeg">
+                <source src="audio/primepodcast.ogg" type="audio/ogg">
+                <a href="audio/primepodcast.txt">Download Podcast</a>
+            </audio>
+            <div class="contact">
+                Prime Properties <br>
+                3055 Bode Road <br>
+                Schaumburg, IL 60194 <br>
+                <br>
+                <a id="mobile" href="tel:847-555-8888">847-555-8888</a>
+                <span id="desktop">847-555-8888</span>
+            </div>
+        </main><br>
+        <footer>
+            Copyright &copy; 2020 Prime Properties<br>
+            <a href="">yourfirstname@yourlastname.com</a>
+            <div>
+                <p id="modDate"></p>
+                <p id="jqmodDate"></p>
+                <script>
+                    let date = document.lastModified;
+                    document.getElementById("modDate").innerHTML = `This page was modified on ${date}`;
+
+                    $(document).ready(function() {
+                        $("#jqmodDate").html("This page was last modified on: " + document.lastModified);
+                    });
+                </script>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

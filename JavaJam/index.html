@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--[if lt IE9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/javajam.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>JavaJam Coffee House</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>JavaJam Coffee House</h1>
+            <!--<img src="images/javalogo.gif" alt="JavaJam logo" height="100" width="750">-->
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="gear.html">Gear</a></li>
+            </ul>
+        </nav>
+        <main>
+            <img class="floatright " id="road" src="images/windingroad.jpg" alt="winding road" height="165" width="250">
+            <p>"Follow the winding road to JavaJam"</p>
+            <ul>
+                <li>Sepcialty Coffee and Tea</li>
+                <li>Bagels, Muffins, and Organic Sancks</li>
+                <li>Music and Poetry Readings</li>
+                <li>Open Mic Night</li>
+            </ul>
+            <!--<img class="floatright " id="road" src="images/windingroad.jpg" alt="winding road" height="165" width="250">-->
+            <div>
+                12312 Main Street <br>
+                Mountain Home, CA 93923 <br>
+                <a id="mobile" href="tel:800-555-5555">1-800-555-5555</a>
+                <span id="desktop">1-800-555-5555</span>
+            </div>
+        </main>
+        <footer>
+            Copyright &copy; 2020 JavaJam Cofee House<br>
+            <a href="">yourfirstname@yourlastname.com</a>
+            <div>
+                <p id="modDate"></p>
+                <p id="jqmodDate"></p>
+                <script>
+                    let date = document.lastModified;
+                    document.getElementById("modDate").innerHTML = `This page was modified on ${date}`;
+
+                    $(document).ready(function() {
+                        $("#jqmodDate").html("This page was last modified on: " + document.lastModified);
+                    });
+                </script>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--[if lt IE9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+    <script>
+        function validateForm(){
+            if(document.forms[0].email.value == ""){
+                alert('Please enter an email address');
+                return false;
+            }
+            return true;
+        }
+    </script>
+        <style>
+            label.error{
+                float: none;
+                position: relative;
+                left: 27em;
+                top: -2.5em;
+                width: 25em;
+                text-align: left;
+                font-style: italic;
+                font-size: .90em;
+                color: #f00;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.js"></script>
+        <script>
+        $(document).ready(function(){
+         $('form').validate();
+         });
+        </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fishcreek.css">
+    <title>Fish Creek Animal Hospital :: Contact</title>
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+        <h1>Fish Creek Animal Hospital</h1>
+        <!--<img src="images/fishcreeklogo.gif" alt="Fish Creek Logo" height="100" width="500">-->
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="askthevet.html">Ask the Vet</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="shop.html">Shop</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Contact Fish Creek</h2>
+        <form method="POST" action="https://webdevbasics.net/scripts/fishcreek.php" onsubmit="return validateForm();">
+            <label for="name">Name:</label>
+            <input name="name" type="text">
+            <label for="email">E-mail:</label>
+            <input class="required email" name="email" type="email">
+            <label for="textArea">Comments:</label>
+            <textarea name="textArea" id="" cols="20" rows="2"></textarea>
+            <input id="submit" type="submit" value="Send Now">
+        </form>
+    </main>
+    <footer>
+        Copyright &copy; 2020 Fish Creek Animal Hospital<br>
+        <a href="">yourfirstname@yourlastname.com</a>
+    </footer>
+    </div>
+</body>
+</html>

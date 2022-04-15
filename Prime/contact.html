@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--[if lt IE9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/prime.css">
+    <title>Prime Properites :: Contact</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Prime Properties</h1>
+            <!--<img src="images/primelogo.gif" alt="Prime Logo" height="100" width="800">-->
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Listings</a></li>
+                <li><a href="financing.html">Financing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+        <main id="rightcol">
+            <p>Required information is marked with an asterisk (*)</p>
+            <form method="POST" action="https://webdevbasics.net/scripts/prime.php">
+                <label for="name"><sup>*</sup>Name:</label>
+                <input name="name" type="text" required="required">
+                <label for="email"><sup>*</sup>E-mail:</label>
+                <input name="email" type="email" required="required">
+                <label for="textArea"><sup>*</sup>Comments:</label>
+                <textarea name="textArea" id="" cols="20" rows="2" required="required"></textarea>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </main>
+        <footer>
+            Copyright &copy; 2020 Prime Properties<br>
+            <a href="">yourfirstname@yourlastname.com</a>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--[if lt IE9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/javajam.css">
+    <title>JavaJam Coffe House :: Jobs</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>JavaJam Coffee House</h1>
+            <!--<img src="images/javalogo.gif" alt="JavaJam logo" height="50" width="250">-->
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="gear.html">Gear</a></li>
+            </ul>
+        </nav>
+        <main>
+            <p>Want to work at JavaJam? Fill out the form below to start your application.  
+                Required Fields are marked with an asterisk(*)
+            </p>
+            <form method="POST" action="https://webdevbasics.net/scripts/javajam.php">
+                <label for="name"><sup>*</sup>Name:</label>
+                <input name="name" type="text" required="required">
+                <label for="email"><sup>*</sup>E-mail:</label>
+                <input name="email" type="email" required="required">
+                <label for="textArea"><sup>*</sup>Experience</label>
+                <textarea name="textArea" id="" cols="25" rows="5" required="required"></textarea>
+                <input id="submit" type="submit" value="Apply Now">
+            </form>
+        </main>
+        <footer>
+            Copyright &copy; 2020 JavaJam Cofee House<br>
+            <a href="">yourfirstname@yourlastname.com</a>
+        </footer>
+    </div>
+</body>
+</html>
